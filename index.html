@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <img src="/assets/images/illustration-sign-up-mobile.svg" class="sign-up-img hidden-on-desktop" alt="sign-up-image">
+    <!-- Sign-up form start -->
+    <form class="signup-form">
+      <h1 class="signup-form__title">Stay updated!</h1>
+      <p class="signup-form__text">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="signup-form__list">
+        <li class="signup-form__list-item">
+          <img src="/assets/images/icon-list.svg" alt="">
+          Product discovery and building what matters
+        </li>
+        <li class="signup-form__list-item">
+          <img src="/assets/images/icon-list.svg" alt="">
+          Measuring to ensure updates are a success
+        </li>
+        <li class="signup-form__list-item">
+          <img src="/assets/images/icon-list.svg" alt="">
+          And much more!
+        </li>
+      </ul>
+      <div class="signup-form__inputs">
+
+        <div class="signup-form__EmailInput">
+          <label class="signup-form__input-label" for="email"> Email address</label>
+          <input class="signup-form__input" type="email" id="email" name="email" placeholder="  email@company.com">
+        </div>
+        <button class="signup-form__button"> Subscribe to monthly newsletter</button>
+      </div>
+    </form>
+    <img src="/assets/images/illustration-sign-up-desktop.svg" class="sign-up-img hidden-on-mobile" alt="sign-up-image">
+    <!-- Sign-up form end -->
+
+
+    <!-- Success message start -->
+    <div class="Success message hidden">
+      Thanks for subscribing!
+      A confirmation email has been sent to ash@loremcompany.com.
+      Please open it and click the button inside to confirm your subscription.
+      Dismiss message
+    </div>
+    <!-- Success message end -->
+
+
+  </div>
+
+
+
+</body>
+
+</html>
