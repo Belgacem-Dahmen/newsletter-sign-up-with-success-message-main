@@ -14,8 +14,23 @@
 </head>
 
 <body>
-  <div class="container">
+  <!-- Success message start -->
+  <div class="hidden" id="success">
+    <div class="success-message ">
+      <img src="/assets/images/icon-success.svg" class="success-message__img" alt="">
+      <h1 class="success-message__title"> Thanks for subscribing!</h1>
+      <p class="success-message__text">A confirmation email has been sent to <span class="success-message__user-email" id="user-email">
+          ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+    </div>
+    <button class="success-message__button" id="dismiss-message">
+      Dismiss message
 
+    </button>
+  </div>
+  <!-- Success message end -->
+
+  <div class="container" id="form">
     <img src="/assets/images/illustration-sign-up-mobile.svg" class="sign-up-img hidden-on-desktop" alt="sign-up-image">
     <!-- Sign-up form start -->
     <form class="signup-form">
@@ -38,30 +53,30 @@
       <div class="signup-form__inputs">
 
         <div class="signup-form__EmailInput">
-          <label class="signup-form__input-label" for="email"> Email address</label>
-          <input class="signup-form__input" type="email" id="email" name="email" placeholder="  email@company.com">
+          <div class="signup-form__input-info">
+            <label class="signup-form__input-label" for="email"> Email address</label>
+            <p class="hidden signup-form__input-error" id="error-message"> Valid Email Required </p>
+          </div>
+          
+          <input class="signup-form__input" type="email" id="email" name="email" placeholder="email@company.com">
         </div>
-        <button class="signup-form__button"> Subscribe to monthly newsletter</button>
+        <button class="signup-form__button" id="signup-form__button"> Subscribe to monthly newsletter</button>
       </div>
     </form>
     <img src="/assets/images/illustration-sign-up-desktop.svg" class="sign-up-img hidden-on-mobile" alt="sign-up-image">
     <!-- Sign-up form end -->
 
-
-    <!-- Success message start -->
-    <div class="Success message hidden">
-      Thanks for subscribing!
-      A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.
-      Dismiss message
-    </div>
-    <!-- Success message end -->
-
-
   </div>
 
 
 
+
+
+
+
+
+
+  <script src="index.js"></script>
 </body>
 
 </html>
